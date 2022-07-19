@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+:root {
+   --primaircolor: #9356DC;
+   --secondcolor: #FF79DA;
+   --tertiaircolor: #99E2D0;
+   --primairecolor50: #f5edff;
+   --gris: #f6f6f6;
+   --grisfonce: #eaeaea;
+   --grey: #7e7e7e;
+   --shadow: 4px 7px 16px -1px rgba(0,0,0,.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--primaircolor);
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 15px;
+}
+h2 {
+    
+    font-size: 26px;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 24px;
+    text-decoration: double;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+.fa-heart {
+    font-size: 20px;
+}
+
+.margin15 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.margin40 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.padding15 {
+    padding: 15px 5px;
+}
+
+
+.btn {
+   position: relative;
+    height: 50px;
+    width: 25%;
+    margin: auto;
+    border-radius: 50px;
+    -webkit-box-shadow: 4px 7px 16px -1px rgba(0,0,0,.1);
+    box-shadow: 4px 7px 16px -1px rgba(0,0,0,.1);
+    color: #ffffff;
+    background: var(--secondcolor);  
+    background: -webkit-linear-gradient(to top, var(--primaircolor), var(--secondcolor));  
+    background: linear-gradient(to top, var(--primaircolor), var(--secondcolor));
+    
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+}
+.btn:hover {
+    color: var(--primairecolor50);
+    font-weight: bold;
+}
+.header .btn-left {
+    position: absolute;
+    top: 30%;
+    left: 15px;
+}
+.header .btn-left .fa-arrow-left {
+    font-size: 18px;
+}
+
+/* ACCUEIL  */
+
+header {
+    text-align:center;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+  margin: auto;
+}
+
+/*  Accueil - TITRE */
+.cardtitre {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: var(--gris);
+    text-align: center;
+    
+}
+.cardtitre .titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: var(--grisfonce);
+}
+.cardtitre .titre h1 {
+    margin-left: 8px;
+  
+}
+.cardtitre .titre span {
+    margin-right: 8px;
+  
+}
+.cardtitre .titre .fa-location-dot {
+   font-size: 15px;
+  
+}
+
+.cardtitre .titre-detail {
+   
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 70px;
+   
+}
+
+.cardtitre .titre-detail p {
+   margin-top: 15px;
+   margin-bottom: 40px;
+   font-size: 14px;
+   
+}
+
+/* accueil - FONCTIONNEMENT */
+
+.fonction-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cardfonction {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  justify-items: center;
+  width: 30%;
+  height: 70px;
+  background-color: var(--gris);
+  border-radius: 60px;
+  -webkit-box-shadow:4px 8px 11px -2px rgba(0,0,0,.1);
+  box-shadow: 4px 8px 11px -2px rgba(0,0,0,.1);
+  margin-top: 7px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #000000;
+
+}
+
+.cardfonction:hover, 
+.cardfonction.active {
+    background-color: var(--primairecolor50);
+}
+
+.cardfonction:hover .fa-mobile-screen,
+.cardfonction:hover .fa-bowl-food,
+.cardfonction:hover .fa-list,
+.cardfonction.active  .fa-bowl-food {
+    color: var(--primaircolor)
+}
+
+.cardfonction .fa-mobile-screen,
+.cardfonction .fa-bowl-food,
+.cardfonction .fa-list {
+    
+   margin-left: 20px;
+   margin-right: 10px;
+   color: var(--grey);
+   font-size: 20px;
+}
+
+.cardfonction p {
+    font-weight: bold;
+    font-size: 18px;
+}
+.cardfonction .num {
+    margin-left: -5px;
+   width: 25px;
+   height: 25px;
+   border-radius: 100%;
+   background-color: var(--primaircolor);
+   color: #fff;
+   font-size: 14px;
+
+   font-weight: bold;
+ }
+
+/*  accueil - RESTAURANTS  */
+.restaurant {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 40px 15px;
+    background-color: var(--gris);
+}
+
+.restaurant h3 {
+    margin: 30px 0px 20px 10px;
+}
+
+.restaurant .resto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.restaurant .resto .titreresto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.restaurant .resto figure {
+    position: relative;
+    width: 48%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+
+}
+.restaurant .resto figure img {
+    width: 100%;
+    height: 190px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+.restaurant .resto figure figcaption {
+   padding: 10px;
+}
+.restaurant .resto .titreresto h4 {
+    margin-bottom: 5px;
+ }
+
+.restaurant .resto figure .nouveau {
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    padding: 10px;
+    top: 10px;
+    width: 100px;
+    border-radius: 5px;
+    color: #008766;
+    background-color: var(--tertiaircolor);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* -- MENU ----- */
+.photo-resto {
+    position: relative;
+    width: 100%;
+}
+
+.photo-resto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 10px 5px 20px 5px;
+    margin-top: -60px;
+    background-color: var(--gris);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-bottom: 80px;
+}
+
+.menu-titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 75%;
+}
+.menu-detail {
+    width: 75%;
+    margin: auto;
+}
+.menu-detail-titre {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.menu-detail-trait{
+    width: 40px;
+    height: 2px;
+    background-color: var(--tertiaircolor);
+    margin-top: 4px;
+}
+.card-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 15px;
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-menu .card-menu-btn {
+    display:none;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--tertiaircolor);
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+
+/*--- Animation affichage bouton carde des menu  -*/
+.card-menu:hover .card-menu-btn {
+    display: flex;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+/*--- animation icon du bouton -------- */
+.card-menu:hover .card-menu-btn span {
+    display: flex;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+
+.card-menu:not():hover .card-menu-btn {
+    display: flex;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOutRight;
+    animation-name: fadeOutRight;
+}
+
+
+.card-menu .card-menu-btn .fa-circle-chevron-down {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.card-menu .card-menu-titre {
+    position: relative;
+    width: 95%;
+    height: auto;
+    padding: 10px;
+}
+
+.card-menu .card-menu-titre h4 {
+    margin-bottom: 5px;
+}
+
+.card-menu .card-menu-titre .soustitre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu .commander {
+  margin-top: 50px;
+    text-align: center;
+}
+
+/*--- ANIMATION  ---- */
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode:backwards;
+    animation-fill-mode: backwards;
+   
+}
+
+.delais-anime1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+/*-----AFFICHER DROITE VERS GAUCHE  ------------- */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*-----AFFICHER DROITE VERS GAUCHE  ------------- */
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+
+/*----- DISPARAITRE DROITE VERS GAUCHE  ------------- */
+@-webkit-keyframes fadeOutRight {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+/*------ AFFICHER DU BAS VERS LE HAUT --------------- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+/*----- ROTATION  ------------- */
+@-webkit-keyframes rotateIn {
+    from {
+        opacity: 0;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-origin: center;
+        transform-origin: center
+    }
+}
+
+.fadeUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft
+}
+
+
+
+
+/*  FOOTER */
+footer {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #353535;
+    color: #ffffff;
+}
+
+.footer {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.footer .footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a{
+    color: #ffffff;
+}
+
+.footer a:hover {
+    color: var(--primairecolor50);
+}
+.footer a span {
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+
+/*---- RESPONSIVE ---  */
