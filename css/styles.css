@@ -44,6 +44,7 @@ ul li {
 h1 {
     font-size: 15px;
 }
+
 h2 {
     
     font-size: 26px;
@@ -54,13 +55,17 @@ h2 {
 
 h3 {
     font-size: 24px;
-    text-decoration: double;
     line-height: 24px;
 }
 
 h4 {
     font-size: 20px;
-    font-weight: bold;
+}
+
+h5 {
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 16px;
 }
 
 .flex-center {
@@ -74,7 +79,7 @@ h4 {
     font-size: 20px;
 }
 
-.margin15 {
+.margin25 {
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -112,6 +117,7 @@ h4 {
     font-weight: bold;
 }
 .header .btn-left {
+    display: none;
     position: absolute;
     top: 30%;
     left: 15px;
@@ -459,8 +465,8 @@ header {
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
-    -webkit-animation-fill-mode:backwards;
-    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
    
 }
 
@@ -469,7 +475,7 @@ header {
     animation-delay: 1s
 }
 
-/*-----AFFICHER DROITE VERS GAUCHE  ------------- */
+/*-----AFFICHER PROGRESSIVEMENT ------------- */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -616,11 +622,6 @@ header {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp
 }
-.fadeInLeft {
-    -webkit-animation-name: fadeInLeft;
-    animation-name: fadeInLeft
-}
-
 
 
 
@@ -665,8 +666,9 @@ footer {
     color: var(--primairecolor50);
 }
 .footer a span {
-    margin-right: 8px;
-    font-size: 10px;
+    display: inline-block;
+    margin-right: 12px;
+   width: 10px;
 }
 
 
