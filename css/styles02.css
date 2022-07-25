@@ -126,6 +126,48 @@ h5 {
 }
 
 /*-- ICON JAIME --- */
+
+.heart {
+    stroke: #7e7e7e;
+    
+    fill: transparent;
+}
+.icon-heart {
+	background-color: #e7e6e6;
+    stroke: #000000;
+    stroke-width: 10;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	transform: rotate(-45deg) scale(1);
+}
+
+.icon-heart::after {
+	background: inherit;
+	border-radius: 50%;
+    stroke: #000000;
+    stroke-width: 10;
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: 0;
+	height: 20px;
+	width: 20px;
+}
+
+.icon-heart::before {
+	background: inherit;
+	border-radius: 50%;
+    stroke: #000000;
+    stroke-width: 10;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -50%;
+	height: 20px;
+	width: 20px;
+}
+
 .fa-heart {
     font-size: 25px;
 }

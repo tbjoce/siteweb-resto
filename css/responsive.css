@@ -51,10 +51,10 @@
 }
 
 
-
 /* -- TABLETTE ---------- */
 @media  (min-width: 768px) and (max-width: 991.99px) {
-   
+    /*-- RESTAURANT ---- */
+    .restaurant .resto figure { width: 48%; }
 
 }
 
